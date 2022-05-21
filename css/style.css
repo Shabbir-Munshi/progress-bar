@@ -1,0 +1,65 @@
+body{
+    background: rgb(111, 42, 42);
+}
+
+.progress_bar_wrapper{
+    margin: 50 auto;
+    width: 500px;
+    padding: 15px 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+       
+   }
+   .progress_bar_wrapper .progress{
+       margin-top: 10px;
+       height: 8px;
+       width: 100%;
+       background: #000;
+       border-radius: 2px;
+       -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+       -ms-border-radius: 2px;
+       -o-border-radius: 2px;
+       overflow: visible;
+   }
+   .progress_bar_wrapper .skill_progress_bar{
+       height: 8px;
+       background: #20C997;
+       border-top-left-radius: 2px;
+       border-bottom-left-radius: 2px;
+       position: relative;
+       animation: progressBar 2s ease-in-out;
+       -webkit-animation: progressBar 2s ease-in-out;
+   }
+   
+   .skill_progress_bar::after{
+       position: absolute;
+       content: '';
+       height: 20px;
+       width: 7px;
+       background: #20C997;
+       right: 0px;
+       top: -6px;
+       border-radius: 3px;
+       -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+       -ms-border-radius: 3px;
+       -o-border-radius: 3px;
+   }
+   @keyframes progressBar {
+       0% {
+         opacity: 0;
+         transform: translateX(-800px);
+         -webkit-transform: translateX(-800px);
+         -moz-transform: translateX(-800px);
+         -ms-transform: translateX(-800px);
+         -o-transform: translateX(-800px);
+   }
+       100% {
+           transform: translateX(0px);
+           -webkit-transform: translateX(0px);
+           -moz-transform: translateX(0px);
+           -ms-transform: translateX(0px);
+           -o-transform: translateX(0px);
+   }
+   }
